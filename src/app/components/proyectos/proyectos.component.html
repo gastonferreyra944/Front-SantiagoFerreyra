@@ -1,0 +1,21 @@
+<div class="proyecto mb-3">
+  <h1>PROYECTOS</h1>
+  <app-addbutton *ngIf="login" (click)="abrirModalAgregar()"></app-addbutton>
+  
+  <div class="card mb-3" style="max-width: 540px;" *ngFor="let Pro of proyecto">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="Pro.url" class="img-fluid rounded-start" alt="foto del proyecto">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+          <h2 class="card-title">{{Pro.titulo}}</h2><app-deletebutton (click)="borrarProyecto (Pro.idproyecto)" *ngIf="login"></app-deletebutton ><app-editbutton *ngIf="login" (click)="abrirModal(Pro.idproyecto)"></app-editbutton>
+        </div>
+          <h6 class="card-text">{{Pro.descripcion}}</h6>
+          <a href="{{Pro.descripcion}}" class="card-text" *ngIf ="Pro.url" target="_blank"><button type="button" class="btn btn-outline-primary" > click here </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

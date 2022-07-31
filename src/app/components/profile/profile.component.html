@@ -1,0 +1,28 @@
+
+<app-banner [url]="persona.coverurl"></app-banner>
+<div class="d-flex">
+    <div class="card all-card" id="first-card">
+
+        <div class="info">
+            <div class="info-img">
+                <div class="d-flex justify-content-end" style="background-color: blueviolet">
+                <app-editbutton id="fantasma" *ngIf="login" (click)="abrirModal(persona.idpersona)"class="me-2" style="background-color: red;"></app-editbutton>
+                </div>
+
+                <img src="https://i.ibb.co/3FGbLfk/fotoperfil.jpg" id="profile-img" alt="foto perfil">
+            </div>
+
+            <div class="info-text">
+                <h1 class="card-title">Santiago Ferreyra</h1>
+                <p class="card-text">Full Stack Developer</p>
+                <div id="info-contact" class="localidad grey">Cordoba</div>
+                <span class="localidad" id="contacto"><a href="#">gastonferreyra944@hotmail.com</a></span>
+            </div>
+            <div class="info-btns">
+                <button *ngIf="login" class="btn btn-primary" type="button" > ✏️</button>
+
+            </div>
+        </div>
+    </div>
+    <app-about></app-about>
+</div>

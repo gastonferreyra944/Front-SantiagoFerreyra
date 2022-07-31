@@ -1,0 +1,25 @@
+.proyecto {
+    background-color: rgb(174, 174, 174);
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.card {
+    width: 90%;
+    
+}
+
+.img-fluid.rounded-start {
+    width: 200px;
+    height: 200px;
+}
+h1{
+    text-align: center;
+    
+} 
+
+.row{
+    height:200px;
+    justify-content: space-between;
+}

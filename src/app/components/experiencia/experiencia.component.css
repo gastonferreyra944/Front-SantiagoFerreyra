@@ -1,0 +1,18 @@
+
+.experiencia { 
+    margin-top: 5px;
+    background :rgb(174, 174, 174)
+   
+}
+#experiencia{
+    list-style: none;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+h2 {
+    text-align: center;
+    padding : 3px
+}
